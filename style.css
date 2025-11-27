@@ -1,0 +1,430 @@
+:root {
+    font-size: 10px;
+    --main-color: floralwhite;
+    --black: #131313;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+#sobre, #produto, #colaboradores, #contato {
+  scroll-margin-top: 200px;
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.caixa-video video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 5%;
+    z-index: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.522));
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var(--bg);
+    border-bottom: var(--border);
+    width: 100vw;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 620px;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.header section a img {
+    height: 100px;
+    width: auto;
+}
+
+.header section nav a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+    transition: 0.1s linear;
+    text-align: center;
+    
+}
+
+.header section nav a:hover {
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.2rem;
+    color: var(--main-color);
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-container div {
+    max-width: 60rem;
+}
+
+.main-container h3 {
+    font-size: 8rem;
+    color: floralwhite;
+    text-align: left;
+    line-height: 8rem;
+}
+
+.main-container div p {
+    font-size: 2rem;
+    color: floralwhite;
+    font-weight: lighter;
+    vertical-align: middle;
+    position: relative;
+    top: 10px;
+}
+
+.botao-mais {
+    background-color: rgb(255, 255, 255);
+    color: var(--black);
+    border: none;
+    padding: 10px 15px;    
+    position: relative;
+    top: 35px;
+    margin: 220px;
+    border-radius: 10px;
+    transition: 0.3s linear
+}
+
+.main-container div a:hover {
+    background-color: rgb(250, 235, 220);
+    letter-spacing: 0.09rem;
+}
+
+.caixa-sobre{
+    margin-top: 100px;
+}
+
+.caixa-sobre h2 {
+    margin-top: -50px;
+    text-align: center;
+    color:floralwhite;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.caixa-sobre .sobre-container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.522));
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.caixa-sobre .sobre-container .sobre-imagem {
+    flex: 1 1 45rem;
+    
+}
+
+.caixa-sobre .sobre-container .sobre-imagem img {
+    width: 100%;
+}
+
+.caixa-sobre .sobre-container .texto-sobre {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.caixa-sobre .sobre-container .texto-sobre h3 {
+    font-size: 3rem;
+    color: floralwhite;
+    margin-top: -30px ;
+}
+
+.caixa-sobre .sobre-container .texto-sobre p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: floralwhite;
+    line-height: 1.8;
+    padding: 0.1rem;
+    margin-top: 2rem;
+}
+
+.cabecalho-sobre {
+    margin-top: -50px;
+}
+
+.texto-sobre .botao-mais {
+    align-self: center;
+}
+
+.texto-sobre .botao-mais:hover {
+    background-color: rgb(250, 235, 220);
+    letter-spacing: 0.09rem;
+}
+
+.caixa-produtos {
+    margin-top: 100px;
+}
+
+.caixa-produtos h2 {
+    margin-top: 100px;
+    text-align: center;
+    color: floralwhite;
+    padding: 3.5rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+
+.Imagem-produtos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Imagem-produtos img {
+    width: 40%;
+    height: auto; 
+}
+
+.desc-produto h3 {
+     margin-right: 30px;
+    text-align: center;
+    color: floralwhite;
+    padding: 3.5rem;
+    text-transform: uppercase;
+    font-size: 2.7rem;  
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.desc-produto p {
+    margin-top: -50px;
+    text-align: center;
+    color: floralwhite;
+    padding: 3.5rem;
+    font-size: 2rem; 
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.espec-produto {
+    list-style: none;
+    padding: 0;
+}
+
+.espec-produto li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: floralwhite;
+    margin-left: 375px;
+}
+
+.espec-produto li::before {
+     content: "✔";        
+    color: #28a745;      
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.colaboradores h2 {
+    margin-top: 200px;
+    text-align: center;
+    color: floralwhite;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    margin-bottom: 100px;
+}
+
+.lista-colaboradores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 130px;
+    justify-content: center;
+}
+
+.lista-colaboradores img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.lista-colaboradores span {
+    text-align: center;
+    color: floralwhite;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+.lista-colaboradores h3 {
+    text-align: center;
+    color: floralwhite;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+
+.contato {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contato h2 {
+    margin-top: 100px;
+    text-align: center;
+    color: floralwhite;
+    padding: 3.5rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+
+.contato h3 {
+    margin-top: -50px;
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    padding: 3.5rem;
+    font-size: 2.75rem; 
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+
+.contato .caixa-contato {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 3rem;
+}
+
+.formulario, .localizacao {
+    flex: 1;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #1e90ff;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.localizacao p {
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-mapa {
+    margin-top: 60px;
+} 
+
+.linha {
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin-top: 60px;
+}
+.caixa-modal .modal{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+    z-index: 4;
+    top: 50%;
+    left: -36%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+ .caixa-modal .mascara-modal{
+    visibility:  hidden;
+    z-index: 3;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10,12,16,0.999) 15%, rgba(10,12,16,0.7) 50%, rgba(10,12,16,0.99) 85%);
+    opacity: 1;
+}
